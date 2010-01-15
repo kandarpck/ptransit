@@ -1,0 +1,36 @@
+
+---------------------------------------------------------------------
+README 
+Author: Vijay C Patil
+---------------------------------------------------------------------
+
+This directory contain prototype software related to Pune transit 
+project.
+
+To compile and execute use following instructions. This software is 
+tested only on GNU/Linux Ubuntu 8.10.
+
+$ make
+g++ -Wall -g main.cpp routes.cpp -o rgen.exe
+
+Before compiling and running the executable, you probably want to 
+edit source code file 'main.cpp'. The input data file names are hard
+coded in main function. Sample input data routes-sample.csv and 
+trips-sample.csv is available in the directory. Change the file names 
+in main function (file: main.cpp) to use sample input data.
+
+If you have with you schedule data of any public transit organisation 
+then you may use file names containing the data.
+
+Keep all input data set files in same directory as executable.
+
+$ ./rgen.exe 
+
+If program exits successfully, it will generated HTML pages 
+(one index.html page and many routes pages) in subdirectory 'html'. 
+You can open index.html in your favorite web browser.
+
+$ firefox index.html &
+
+Subdirectory 'html' also contain sample HTML pages 'sample_index.html'
+and 'sample_route.html'.

@@ -1,0 +1,72 @@
+
+---------------------------------------------------------------------
+					Release Notes :: ptransit project
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+Date: Wednesday, 21 January 2009. Version 0.5 Released.
+
+Following new features are available in this release.
+
+1. Program now generates compact route page, which is also printer
+friendly page.
+
+2. Bus stop page for each bus stop is generated. This pages contains
+list of all routes through the bus stop and arrival times. It also
+shows names of major bus stops on the route. This output is suitable 
+for displaying on bus stop walls.
+
+Since there are no unique ids for bus stops, and stop names are not 
+unique, the usefulness of stop pages is limited. Specifically stops
+with same name on different sides of the road cannot be differentiated.
+
+3. Added test pages to project home page.
+
+---------------------------------------------------------------------
+Date: Monday, 12 January 2009. Version 0.4 Released.
+
+Following new features are available in this release.
+
+1. Improved error report 'errors.txt'.
+
+2. All html output is now generated in subdirectory 'html'.
+
+3. Code is refactored and now very easy to understand. 
+
+4. All routes from master files are included in index page. Some routes
+(like Shuttle) do not have trip time information are also shown, with
+relevant note.
+
+5. Testing: Lots of formatting errors were removed from PMPML data and 
+test runs were made.
+
+6. Sample index page and sample route are available in the project 
+website.
+
+---------------------------------------------------------------------
+Date: Tuesday, 6 January 2009. Version 0.3 Released.
+
+Major improvements in quality of output HTML pages and error reports.
+Changes were are made to parse and fix as much input data as possible.
+Updated sample HTML page.
+
+---------------------------------------------------------------------
+Date: Thursday, 1 January 2009. Version 0.2 Released.
+
+Contains improved version of 'rgen' to convert schedule data into 
+HTML pages. Program 'rgen' also generates files errors.txt and 
+warnings.txt. These files contain information about missing data and 
+data inconsistencies in input schedule data.
+
+This version also contains a bug (in reading routes data) fix.
+
+---------------------------------------------------------------------
+Date: Tuesday, 30 December 2008. Version 0.1 Released.
+
+Contains one program 'rgen' to convert schedule data into suitable HTML
+pages. These HTML pages could be used on public transit authorities
+website.
+
+---------------------------------------------------------------------
+					START
+---------------------------------------------------------------------
